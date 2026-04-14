@@ -17,6 +17,11 @@ bool Menor(T a, T b){
     return a < b;
 }
 
+template <typename T, typename ran>
+bool Ascendencia(T arr[],  ran n){
+    return arr[0] < arr[n];
+}
+
 void DemoUtil();
 
 #endif // __UTIL_H__

@@ -116,8 +116,8 @@ void DemoBurbuja() {
 //     }
 // }
 
-void DemoQuickSort() {
-    cout << "DemoQuickSort \n";
+//void DemoQuickSort() {
+//    cout << "DemoQuickSort \n";
     // T1 arr[] = {5, 2, 8, 15, 1, 9, 4, 7, 3, 6};
     // auto n = sizeof(arr) / sizeof(arr[0]);
 
@@ -130,7 +130,7 @@ void DemoQuickSort() {
 //     PrintArray(arr, n, cout);
 
 //     cout << endl;
-}
+//}
 
 // // Función para mezclar dos subarreglos ordenados de arr[].
 // void Merge(T1* arr, const ContainerRange left,
@@ -200,8 +200,8 @@ void DemoQuickSort() {
 //     Merge(arr, begin, mid, end, pComp);
 // }
 
-void DemoMergeSort(){
-    cout << "DemoMergeSort" << endl;
+//void DemoMergeSort(){
+    //cout << "DemoMergeSort" << endl;
     // T1 arr[] = {5, 2, 8, 1, 15, 9, 4, 7, 3, 6};
     // auto n = sizeof(arr) / sizeof(arr[0]);
 
@@ -213,11 +213,26 @@ void DemoMergeSort(){
 //     cout << "Array ordenado Descendente:\n";
 //     PrintArray(arr, n, cout);
 
-    cout << endl;
+    //cout << endl;
+//}
+
+void DemoBinarySearch(){
+    cout<<"Demo Binary Search: "<<endl;
+    T1 arr1[] = {5, 2, 8, 1, 15, 9, 4, 7, 3, 6};
+    auto n1 = sizeof(arr1) / sizeof(arr1[0]);
+
+    BurbujaClasico(arr1, n1, Mayor<T1>);
+    PrintArray(arr1, n1);
+    cout << "Buscando " << 7 << ": " << AutoBinarySearch(arr1, 0, n1, 7, Ascendencia<T1,T1>, Mayor<T1>) << endl;
+
+    BurbujaClasico(arr1, n1, Menor<T1>);
+    PrintArray(arr1, n1);
+    cout << "Buscando " << 7 << ": " << AutoBinarySearch(arr1, 0, n1, 7, Ascendencia<T1,T1>, Menor<T1>) << endl;
+    cout <<endl;
 }
 
 void DemoSorting() {
     DemoBurbuja();
-    DemoQuickSort();
-    DemoMergeSort();
+    //DemoQuickSort();
+    //DemoMergeSort();
 }

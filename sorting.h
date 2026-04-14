@@ -68,15 +68,19 @@ void BurbujaRecursivo(T arr[], ContainerRange n, Func func) {
             intercambiar(arr[0], arr[j]);
     BurbujaRecursivo(arr+1, n-1, func);
 }
+
+//
+template <typename T, typename Func, typename Ord>
+ContainerRange AutoBinarySearch(T arr[], ContainerRange first, ContainerRange last, T elem, Ord ord, Func func){
+    if (ord){
+        return BinarySearch(arr, first, last, elem, func);
+    }
+    return BinarySearch(arr, first, last, elem, func);
+}
+void DemoBinarySearch();
+//
+
 void DemoBurbuja();
-
-// ContainerRange  particionar(ContainerElemType1* arr, ContainerRange first, ContainerRange last, CompFunc pComp);
-// void QuickSort  (ContainerElemType1* arr, ContainerRange first, ContainerRange last, CompFunc pComp);
-// void DemoQuickSort();
-
-// void Merge(ContainerElemType1* arr, const ContainerRange left, const ContainerRange mid, const ContainerRange right, CompFunc pComp); 
-// void MergeSort(ContainerElemType1* arr, const ContainerRange begin, const ContainerRange end, CompFunc pComp);
-// void DemoMergeSort();
 
 void DemoSorting();
 void DemoSearch();

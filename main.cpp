@@ -16,5 +16,6 @@ int main() {
     //DemoUtil();
     DemoSorting();
     DemoSearch();
+    DemoBinarySearch();
     return 0;
 }
