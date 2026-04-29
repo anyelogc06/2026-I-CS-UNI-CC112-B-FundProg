@@ -5,6 +5,7 @@
 #include "types.h"
 using namespace std;
 
+//Correspondiente a 14-MatrixTemplate
 template<typename TP>
 class CMatrix{
     TP   **m_pMat;

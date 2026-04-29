@@ -1,12 +1,12 @@
-#include <iostream> // cout 
-#include "arit.h"   // suma, resta
-#include "util.h"
-#include "sorting.h"
-#include "punteros.h"
-#include "vector.h"
-#include "matrix.h"
+#include <iostream>     // cout 
+#include "arit.h"       // suma, resta
+#include "util.h"       // fact, fib, Mayor, Menor
+#include "sorting.h"    // bubble, Merge, Quick, Binary
+#include "punteros.h"   //
+#include "vector.h"     // create, read, print, delete
+#include "matrix.h"     // create, read, transf, print, delete
 #include "cmatrix.h"
-#include "cvector.h"
+#include "cvector.h"    // class Cvector
 
 // Antes: g++ -std=c++2b main.cpp arit.cpp -o main
 // Ahora                : make
@@ -24,8 +24,6 @@ int main() {
     // DemoPunteros1();
     // DemoPunteros2Vector();
     // DemoMatrix1(); 
-
-    // DemoCVector();
-    DemoCMatrix1();
+    DemoCVector();
     return 0;
 }

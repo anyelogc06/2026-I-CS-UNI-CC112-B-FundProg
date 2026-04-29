@@ -44,6 +44,8 @@ CVector<T>::CVector(){
     m_pVect = nullptr;
 }
 
+//Al llamar un CVector distinto, llamamos a sus variables
+//o atributos por name_Cvector.atributo_private
 template <typename T>
 CVector<T>::CVector(CVector &other){
     m_nElem = other.m_nElem;
@@ -74,6 +76,8 @@ void CVector<T>::ReadVector(istream &is){
 template <typename T>
 void CVector<T>::Sort( bool (*pComp)(T, T) )
 {
+    //Cuando llama a una funcion externa, 
+    //le enviamos todos los parametros requeridos
     BurbujaClasico(m_pVect, m_nElem, pComp);
 }
 

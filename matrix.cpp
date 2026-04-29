@@ -57,6 +57,8 @@ void DemoMatrix1(){
     // DeleteMatrix(pMat3, rows);    
 }
 
+//Correspondiente a 14-MatrixTemplate:
+/*
 void Sumar1(TP &element){
     element += 1;
 }
@@ -82,4 +84,4 @@ void DemoCMatrix1(){
     ofstream ofs("matriz1.txt");
     m1.PrintMatrix(ofs);
     ofs.close();
-}
+}*/
