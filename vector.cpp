@@ -7,12 +7,12 @@ void CreateVector(TP *&pv, const size_t n){
 
 void ReadVector(TP *pv, const size_t n){
     cout << "Ingrese " << n << " valores: ";
-    for (auto i = 0; i < n; ++i)
+    for (size_t i = 0; i < n; ++i)
         cin >> pv[i];
 }
 
 void PrintVector(TP *pv, const size_t n){
-    for (auto i = 0; i < n; ++i)
+    for (size_t i = 0; i < n; ++i)
         cout << pv[i] << " ";
     cout << endl;
 }
