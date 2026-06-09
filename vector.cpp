@@ -12,12 +12,12 @@ void CreateVector(TP *&pv, const size_t n){
 
 void ReadVector(TP *pv, const size_t n){
     cout << "Ingrese " << n << " valores: ";
-    for (auto i = 0; i < n; ++i)
+    for (size_t i = 0; i < n; ++i)
         cin >> pv[i];
 }
 
 void PrintVector(TP *pv, const size_t n){
-    for (auto i = 0; i < n; ++i)
+    for (size_t i = 0; i < n; ++i)
         cout << pv[i] << " ";
     cout << endl;
 }
@@ -51,18 +51,7 @@ void DemoPunteros2Vector(){
     DeleteVector(pVect);
 }
 
-template <typename T>
-void Print(T n) { cout << "valor: " << n << endl; }
-
-template <typename T>
-void Print2(T &n) { cout << "valor: " << n << endl; }
-
-template <typename T>
-void AddX(T &n, T val1, T val2) { n += val1 + val2; }
-
-template <typename T>
-void Square(T &n) { n *= n; }
-
+//Aplicando Templates <T, Func> & fstream:
 void DemoPointersVector2(){
     TI *pArray2 = nullptr;
     cout << "Nivel #2 (cachimbo mejor informado (templates))\n";
@@ -94,6 +83,11 @@ void DemoPointersVector2(){
     DeleteArray2(pArray2);
 }
 
+//Aplicando encapsulando las funciones en un class array3.
+//Ademas, aplicas un modelo "anidado" en vez de uno "junto".
+//Es decir, el template <T, Func> quedan grabado al tipo de class,
+//causando que al crear un objeto este Func este definido, por ello
+//al anidarlo, el tipo Func se decide cada que llames al metodo.
 void DemoPointersVector3(){
     cout << "Nivel #3 (cachimbo con clase)\n";
     cout << "Ingrese el tamaño del vector: ";

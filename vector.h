@@ -6,6 +6,18 @@
 
 using namespace std;
 
+template <typename T>
+void Print(T n) { cout << "valor: " << n << endl; }
+
+template <typename T>
+void Print2(T &n) { cout << "valor: " << n << endl; }
+
+template <typename T>
+void AddX(T &n, T val1, T val2) { n += val1 + val2; }
+
+template <typename T>
+void Square(T &n) { n *= n; }
+
 void CreateVector(TP *&pv, const size_t n);
 void ReadVector  (TP *pv, const size_t n);
 void PrintVector (TP *pv, const size_t n);

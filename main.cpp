@@ -27,11 +27,11 @@ int main() {
 
     // DemoCVector();
 
-    // DemoPointersVector2();
-    DemoPointersVector3();
-    DemoPointersVector4();
-    DemoPointersVector5();
+     DemoPointersVector2();
+    //DemoPointersVector3();
+    //DemoPointersVector4();
+    //DemoPointersVector5();
     
-    DemoCMatrix1();
+    //DemoCMatrix1();
     return 0;
 }
